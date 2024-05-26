@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar {
+    display: flex;
+    position:sticky ;
+    align-items: center;
+    top: 0;
+    cursor: pointer;
+    justify-items: center;
+    
+}
+.nav-list {
+      width: 50%;
+      /*background-color: ;*/
+      display: flex;
+      align-items: center;
+      
+    
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.logo img {
+    width: 80px; /* Adjust the width to your desired size */
+}
+.logo img{
+
+    
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px ;
+    
+
+}
+.nav-list li a{ 
+    text-decoration: none;
+    color: black;
+    }
+.nav-list li a:hover{ 
+    
+    color: gray;
+}
+
+.rightNav {
+   /* background-color: ;*/
+    width: 90%;
+    text-align: right;
+    padding: 0.23px;
+   
+    
+}
+.search{
+    padding: 5px;
+    font-size: 20px;
+    border: 3px solid gray;
+    border-radius: 5%;
+    
+    
+
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('./4.jpg');
+    background-size: 100% ; /* */ 
+    background-blend-mode: darken;
+    
+}
+.firstselection{
+    height: 100vh;
+/*100vh*/}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+    margin-left: 3%;
+    max-width: 50%;
+    height: 80%;
+    float: left;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.firstHalf {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    margin-left: 3%;
+}
+.secondHalf{
+width: 30%;
+
+}
+.secondHalf img {
+    width: 70%;
+    border: 5px solid rgb(229, 234, 234) ;
+    border-radius: 30%;
+    margin: auto;
+    display: block;
+    padding: 5%;
+    
+    
+    
+}
+.secondHalf  img:hover{
+   /* background-color: ;  */
+   border-radius: 5px;
+   color: violet;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.buttons button:hover{
+    color: red;
+    /* background-color:ble; */
+    border: 2px solid black;
+    border-radius: 40%;
+}
+.side{
+    display: flex;
+    align-items: center;
+    width: 1500%;
+  
+}
+.text-big{
+    font-size: 50px;
+}
+.text-small{
+    font-size: 25px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px ;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.button.sm{
+    padding: 6px 10px;
+    vertical-align:middle ;}
+@media (max-width:600px){
+    p{
+        font-size: 5px;
+    }
+}
+@media screen and (max-width=600px) {
+    body{
+      color: red;
+      font-style: italic;
+      font-size: large;
+      
+    }
+}
+body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+body, html {
+    
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background: url('./r4.jpeg');
+    background-size: cover;
+    animation: backgroundAnimation 20s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-image: url('./1.jpg');
+    }
+    50% {
+        background-image: url('./2.jpg'); /* Change this to the next image */
+    }
+    100% {
+        background-image: url('./3.jpeg'); /* Change this to the first image */
+    }
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo {
+    width: 20%;
+    
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 10px; 
+}
+
+.nav-list li {
+    padding: 0 10px; 
+}
+.text-big {
+    font-size: 30px;
+}
+
+.text-small {
+    font-size: 18px;
+}
+.logo img {
+    max-width: 100%;
+}
+
+.secondHalf img {
+    max-width: 100%; 
+    height: auto; 
+}
+@media screen and (max-width: 768px) {
+    .box-main {
+        flex-direction: column;
+        max-width: 90%; 
+    }
+
+    .firstHalf,
+    .secondHalf {
+        width: 100%; 
+    }
+
+    .text-big {
+        font-size: 24px; 
+    }
+
+    .text-small {
+        font-size: 14px;
+    }
+}
+.side {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.side a {
+    flex: 0 0 auto;
+    transition: transform 0.5s ease; 
+}
+
+.side a:hover {
+    transform: translateX(-20px); 
+}
+
+
+
+
+
+
+
+
+
+
+
+.side {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the start (left side) */
+    padding-left: 20px; /* Add padding to the left side for spacing */
+}
+
+.side a {
+    margin-bottom: 20px; /* Add space between each navigation item */
+}
+
+.side img {
+    width: 100px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+}

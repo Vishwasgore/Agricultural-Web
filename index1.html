@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Recommendation Form</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Crop Recommendation Form</h2>
+    <form id="cropForm">
+      <div class="form-group">
+        <label for="cropName">Crop Name:</label>
+        <input type="text" id="cropName" name="cropName" required>
+      </div>
+      <div class="form-group">
+        <label for="soilPh">Soil pH:</label>
+        <input type="number" id="soilPh" name="soilPh" min="0" max="14" step="0.1" required>
+      </div>
+      <div class="form-group">
+        <label for="disease">Disease:</label>
+        <input type="text" id="disease" name="disease" required>
+      </div>
+      <div class="form-group">
+        <label for="waterAvailability">Water Availability:</label>
+        <select id="waterAvailability" name="waterAvailability" required>
+          <option value="">Select</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="recommendation"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
